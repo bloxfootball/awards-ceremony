@@ -30,11 +30,11 @@ local Player = Players.LocalPlayer
 ]=]
 
 --[=[
-	@prop ScreenGui ScreenGui
+	@prop SurfaceGui SurfaceGui
 	@within InterfaceController
 	@readonly
 
-	Reference to `ScreenGui` which will contain all interface.
+	Reference to `SurfaceGui` which will contain all interface.
 ]=]
 
 --[=[
@@ -61,7 +61,7 @@ function InterfaceController:KnitInit()
 	end)
 
 	local PlayerGui: Instance = Player:WaitForChild('PlayerGui')
-	local ScreenGui: Instance = Fusion.New('SurfaceGui')({
+	local SurfaceGui: Instance = Fusion.New('SurfaceGui')({
 		Name = 'Interface',
 
 		IgnoreGuiInset = true,
@@ -84,7 +84,7 @@ function InterfaceController:KnitInit()
 	})
 
 	self.PlayerGui = PlayerGui
-	self.ScreenGui = ScreenGui
+	self.SurfaceGui = SurfaceGui
 end
 
 function InterfaceController:KnitStart()

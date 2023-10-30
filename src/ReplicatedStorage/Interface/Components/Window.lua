@@ -1,0 +1,219 @@
+-- return New "Frame" {
+-- 	Name = "Assign",
+-- 	AnchorPoint = Vector2.new(0, 1),
+-- 	BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+-- 	BackgroundTransparency = 0.1,
+-- 	BorderColor3 = Color3.fromRGB(0, 0, 0),
+-- 	BorderSizePixel = 0,
+-- 	Position = UDim2.fromScale(0, 1),
+-- 	Size = UDim2.fromScale(0.2, 0.5),
+  
+-- 	[Children] = {
+-- 	  New "UICorner" {
+-- 		Name = "UICorner",
+-- 		CornerRadius = UDim.new(0, 10),
+-- 	  },
+  
+-- 	  New "UIGradient" {
+-- 		Name = "UIGradient",
+-- 		Color = ColorSequence.new({
+-- 		  ColorSequenceKeypoint.new(0, Color3.fromRGB(10, 10, 10)),
+-- 		  ColorSequenceKeypoint.new(1, Color3.fromRGB(10, 10, 10)),
+-- 		}),
+-- 		Rotation = 90,
+-- 		Transparency = NumberSequence.new({
+-- 		  NumberSequenceKeypoint.new(0, 0.4),
+-- 		  NumberSequenceKeypoint.new(1, 0),
+-- 		}),
+-- 	  },
+  
+-- 	  New "UIStroke" {
+-- 		Name = "UIStroke",
+-- 		Color = Color3.fromRGB(115, 115, 115),
+-- 		Thickness = 2,
+-- 	  },
+  
+-- 	  New "ImageLabel" {
+-- 		Name = "Top",
+-- 		Image = "rbxassetid://14582019713",
+-- 		ImageColor3 = Color3.fromRGB(30, 30, 30),
+-- 		ImageTransparency = 0.5,
+-- 		ScaleType = Enum.ScaleType.Slice,
+-- 		SliceCenter = Rect.new(125, 50, 125, 50),
+-- 		AnchorPoint = Vector2.new(0.5, 0),
+-- 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+-- 		BackgroundTransparency = 1,
+-- 		BorderColor3 = Color3.fromRGB(0, 0, 0),
+-- 		BorderSizePixel = 0,
+-- 		Position = UDim2.fromScale(0.5, 0),
+-- 		Size = UDim2.fromScale(1, 0.2),
+  
+-- 		[Children] = {
+-- 		  New "Frame" {
+-- 			Name = "Border",
+-- 			AnchorPoint = Vector2.new(0.5, 1),
+-- 			BackgroundColor3 = Color3.fromRGB(115, 115, 115),
+-- 			BorderColor3 = Color3.fromRGB(0, 0, 0),
+-- 			BorderSizePixel = 0,
+-- 			Position = UDim2.fromScale(0.5, 1),
+-- 			Size = UDim2.new(1, 0, 0, 2),
+-- 		  },
+  
+-- 		  New "Frame" {
+-- 			Name = "Content",
+-- 			AnchorPoint = Vector2.new(0.5, 1),
+-- 			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+-- 			BackgroundTransparency = 1,
+-- 			BorderColor3 = Color3.fromRGB(0, 0, 0),
+-- 			BorderSizePixel = 0,
+-- 			Position = UDim2.fromScale(0.5, 1),
+-- 			Size = UDim2.fromScale(1, 1),
+  
+-- 			[Children] = {
+-- 			  New "UIPadding" {
+-- 				Name = "UIPadding",
+-- 				PaddingBottom = UDim.new(0, 10),
+-- 				PaddingLeft = UDim.new(0, 15),
+-- 				PaddingRight = UDim.new(0, 15),
+-- 				PaddingTop = UDim.new(0, 10),
+-- 			  },
+  
+-- 			  New "TextLabel" {
+-- 				Name = "Title",
+-- 				FontFace = Font.new(
+-- 				  "rbxasset://fonts/families/GothamSSm.json",
+-- 				  Enum.FontWeight.Medium,
+-- 				  Enum.FontStyle.Normal
+-- 				),
+-- 				Text = "Assign",
+-- 				TextColor3 = Color3.fromRGB(255, 255, 255),
+-- 				TextScaled = true,
+-- 				TextSize = 14,
+-- 				TextWrapped = true,
+-- 				TextXAlignment = Enum.TextXAlignment.Left,
+-- 				AnchorPoint = Vector2.new(0, 0.5),
+-- 				AutomaticSize = Enum.AutomaticSize.X,
+-- 				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+-- 				BackgroundTransparency = 1,
+-- 				Position = UDim2.fromScale(0, 0.5),
+-- 				Size = UDim2.fromScale(0, 0.5),
+-- 			  },
+  
+-- 			  New "ImageButton" {
+-- 				Name = "Exit",
+-- 				Image = "rbxassetid://7072725342",
+-- 				Active = false,
+-- 				AnchorPoint = Vector2.new(1, 0.5),
+-- 				BackgroundTransparency = 1,
+-- 				Position = UDim2.fromScale(1, 0.5),
+-- 				Selectable = false,
+-- 				Size = UDim2.fromOffset(25, 25),
+  
+-- 				[Children] = {
+-- 				  New "UIAspectRatioConstraint" {
+-- 					Name = "UIAspectRatioConstraint",
+-- 				  },
+-- 				}
+-- 			  },
+-- 			}
+-- 		  },
+  
+-- 		  New "UISizeConstraint" {
+-- 			Name = "UISizeConstraint",
+-- 			MaxSize = Vector2.new(math.huge, 60),
+-- 			MinSize = Vector2.new(0, 30),
+-- 		  },
+-- 		}
+-- 	  },
+  
+-- 	  New "ImageLabel" {
+-- 		Name = "Bottom",
+-- 		Image = "rbxassetid://14582254211",
+-- 		ImageColor3 = Color3.fromRGB(30, 30, 30),
+-- 		ImageTransparency = 0.5,
+-- 		ScaleType = Enum.ScaleType.Slice,
+-- 		SliceCenter = Rect.new(125, 50, 125, 50),
+-- 		AnchorPoint = Vector2.new(0.5, 1),
+-- 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+-- 		BackgroundTransparency = 1,
+-- 		BorderColor3 = Color3.fromRGB(0, 0, 0),
+-- 		BorderSizePixel = 0,
+-- 		Position = UDim2.fromScale(0.5, 1),
+-- 		Size = UDim2.fromScale(1, 0.3),
+  
+-- 		[Children] = {
+-- 		  New "Frame" {
+-- 			Name = "Border",
+-- 			AnchorPoint = Vector2.new(0.5, 0),
+-- 			BackgroundColor3 = Color3.fromRGB(115, 115, 115),
+-- 			BorderColor3 = Color3.fromRGB(0, 0, 0),
+-- 			BorderSizePixel = 0,
+-- 			Position = UDim2.fromScale(0.5, 0),
+-- 			Size = UDim2.new(1, 0, 0, 2),
+-- 		  },
+  
+-- 		  New "Frame" {
+-- 			Name = "Content",
+-- 			AnchorPoint = Vector2.new(0.5, 1),
+-- 			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+-- 			BackgroundTransparency = 1,
+-- 			BorderColor3 = Color3.fromRGB(0, 0, 0),
+-- 			BorderSizePixel = 0,
+-- 			Position = UDim2.fromScale(0.5, 1),
+-- 			Size = UDim2.fromScale(1, 1),
+  
+-- 			[Children] = {
+-- 			  New "UIPadding" {
+-- 				Name = "UIPadding",
+-- 				PaddingBottom = UDim.new(0, 10),
+-- 				PaddingLeft = UDim.new(0, 10),
+-- 				PaddingRight = UDim.new(0, 10),
+-- 				PaddingTop = UDim.new(0, 10),
+-- 			  },
+  
+-- 			  New "TextButton" {
+-- 				Name = "Clear",
+-- 				FontFace = Font.new(
+-- 				  "rbxasset://fonts/families/GothamSSm.json",
+-- 				  Enum.FontWeight.Medium,
+-- 				  Enum.FontStyle.Normal
+-- 				),
+-- 				Text = "Clear",
+-- 				TextColor3 = Color3.fromRGB(255, 255, 255),
+-- 				TextScaled = true,
+-- 				TextWrapped = true,
+-- 				AnchorPoint = Vector2.new(1, 1),
+-- 				BackgroundColor3 = Color3.fromRGB(115, 168, 35),
+-- 				BorderSizePixel = 0,
+-- 				Position = UDim2.fromScale(1, 1),
+-- 				Size = UDim2.new(1, 0, 0, 40),
+  
+-- 				[Children] = {
+-- 				  New "UICorner" {
+-- 					Name = "UICorner",
+-- 					CornerRadius = UDim.new(0, 5),
+-- 				  },
+  
+-- 				  New "UIListLayout" {
+-- 					Name = "UIListLayout",
+-- 					Padding = UDim.new(0, 10),
+-- 					FillDirection = Enum.FillDirection.Horizontal,
+-- 					SortOrder = Enum.SortOrder.LayoutOrder,
+-- 					VerticalAlignment = Enum.VerticalAlignment.Center,
+-- 				  },
+  
+-- 				  New "UIPadding" {
+-- 					Name = "UIPadding",
+-- 					PaddingBottom = UDim.new(0, 10),
+-- 					PaddingLeft = UDim.new(0, 10),
+-- 					PaddingRight = UDim.new(0, 10),
+-- 					PaddingTop = UDim.new(0, 10),
+-- 				  },
+-- 				}
+-- 			  },
+-- 			}
+-- 		  },
+-- 		}
+-- 	  },
+-- 	}
+--   }
